@@ -1,3 +1,10 @@
+execute pathogen#infect()
+filetype plugin indent on
+
+" ctrlP options
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_map = '<Leader>t'
+
 " Height of the command bar
 set cmdheight=1
 
@@ -47,9 +54,5 @@ set mouse=a
 " Get dem line numberz
 set number
 
-" --------BUNDLES--------
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
-filetype plugin indent on
+" for some reason git throws errors even though I'm on a recent version
+let g:go_version_warning = 0
