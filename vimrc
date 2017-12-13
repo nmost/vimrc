@@ -1,5 +1,3 @@
-" plugins used: ctrlp.vim, vim-colors-solarized, vim-go, vim-javascript, vim-livedown, vim-scala
-" plugins run with pathogen
 execute pathogen#infect()
 filetype plugin indent on
 
@@ -15,7 +13,7 @@ set background=dark
 colorscheme solarized
 
 " set backspace behavior
-" set backspace=eol,start,indent
+set backspace=eol,start,indent
 " set whichwrap+=<,>,h,l
 
 " ignore case when searching
@@ -55,6 +53,9 @@ set mouse=a
 
 " Get dem line numberz
 set number
+
+" use system clipboard as default buffer
+set clipboard=unnamed
 
 " for some reason git throws errors even though I'm on a recent version
 let g:go_version_warning = 0
