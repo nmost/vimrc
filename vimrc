@@ -1,3 +1,5 @@
+" plugins used: ctrlp.vim, vim-colors-solarized, vim-go, vim-javascript, vim-livedown, vim-scala
+" plugins run with pathogen
 execute pathogen#infect()
 filetype plugin indent on
 
